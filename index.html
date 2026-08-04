@@ -42,13 +42,14 @@
         .item-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); display: flex; flex-direction: column; border: 1px solid rgba(0,0,0,0.03); transition: transform 0.2s; }
         .item-card:hover { transform: translateY(-5px); }
         
-        .item-icon-box { background: #f0f4f8; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .item-icon-box { background: #f0f4f8; height: 160px; display: flex; align-items: center; justify-content: center; font-size: 3rem; overflow: hidden; }
+        .item-icon-box img { width: 100%; height: 100%; object-fit: cover; }
         
         .item-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
         .item-info h4 { font-size: 1.25rem; margin-bottom: 10px; color: var(--text-dark); font-weight: 700; }
         .item-info p { color: #4a5568; font-size: 0.95rem; margin-bottom: 20px; }
         
-        .price-tag { font-size: 1.1rem; font-weight: 700; color: var(--accent-green); margin-bottom: 15px; background: rgba(0, 135, 81, 0.1); display: inline-block; padding: 4px 12px; border-radius: 6px; align-self: center; text-align: center; }
+        .price-tag { font-size: 1rem; font-weight: 700; color: var(--accent-green); margin-bottom: 15px; background: rgba(0, 135, 81, 0.1); display: inline-block; padding: 4px 12px; border-radius: 6px; align-self: center; text-align: center; }
 
         .btn { display: inline-block; background-color: var(--primary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; text-align: center; }
         .btn:hover { background-color: var(--primary-dark); }
@@ -94,7 +95,7 @@
     
     <div class="grid-container">
         <div class="item-card">
-            <div class="item-test" style="font-size:3.5rem; text-align:center; padding-top:20px;">🎓</div>
+            <div class="item-icon-box" style="font-size:3.5rem;">🎓</div>
             <div class="item-info">
                 <h4>Centre de Formation</h4>
                 <p>Des cursus certifiants, des installations adaptées et un encadrement d'experts pour valoriser vos compétences.</p>
@@ -102,7 +103,7 @@
             </div>
         </div>
         <div class="item-card">
-            <div class="item-test" style="font-size:3.5rem; text-align:center; padding-top:20px;">🛒</div>
+            <div class="item-icon-box" style="font-size:3.5rem;">🛒</div>
             <div class="item-info">
                 <h4>Boutique Commerciale</h4>
                 <p>Une sélection stricte de matériel technologique, d'articles vestimentaires et de fournitures au meilleur prix.</p>
@@ -110,7 +111,7 @@
             </div>
         </div>
         <div class="item-card">
-            <div class="item-test" style="font-size:3.5rem; text-align:center; padding-top:20px;">💼</div>
+            <div class="item-icon-box" style="font-size:3.5rem;">💼</div>
             <div class="item-info">
                 <h4>Prestations de Services</h4>
                 <p>Sous-traitance opérationnelle et déploiements techniques sur site avec assurance qualité absolue.</p>
@@ -151,8 +152,7 @@
             </div>
         </div>
         <div class="item-card">
-            <div class="item-icon-box">🏫</div>
+            <div class="item-icon-box"><img src="BACHE PEDAGOGIQUE 100X100.jpg" alt="Pédagogie"></div>
             <div class="item-info">
                 <h4>Sciences Pédagogiques</h4>
                 <p>Ingénierie de formation, andragogie, techniques de transmission et méthodes modernes.</p>
-                <span class="price-tag">10 500 XAF</span>
