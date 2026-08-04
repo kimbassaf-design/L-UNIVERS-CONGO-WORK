@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'UNIVERS CONGO-WORK - Entreprise Multiservice</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
+        body { background-color: #f8f9fa; color: #333; }
+        header { background-color: #0056b3; color: white; padding: 25px; text-align: center; }
+        nav { background: #004085; text-align: center; padding: 12px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .hero { text-align: center; padding: 80px 20px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos') no-repeat center/cover; color: white; }
+        .hero h2 { font-size: 2.8rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+        .section-title { text-align: center; margin-top: 50px; color: #0056b3; font-size: 2rem; padding: 0 10px; }
+        
+        .container { max-width: 1200px; margin: 30px auto 60px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #0056b3; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #333; margin-bottom: 15px; font-size: 1.5rem; }
+        .card p { color: #666; line-height: 1.6; margin-bottom: 20px; }
+        
+        .grid-container { max-width: 1200px; margin: 30px auto 60px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .item-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; border: 1px solid #ddd; display: flex; flex-direction: column; justify-content: space-between; }
+        .item-img { width: 100%; height: 160px; background-color: #eaeaea; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .item-info { padding: 20px; flex-grow: 1; }
+        .item-info h4 { font-size: 1.2rem; margin-bottom: 10px; color: #333; }
+        .item-info p { color: #666; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4; }
+        
+        .contact-section { max-width: 800px; margin: 30px auto 60px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .contact-info { margin-bottom: 25px; font-size: 1.1rem; line-height: 1.8; }
+        
+        .btn { display: inline-block; background-color: #0056b3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; cursor: pointer; border: none; }
+        .btn:hover { background-color: #004085; }
+        .btn-whatsapp { background-color: #25D366; color: white; display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; text-decoration: none; border-radius: 5px; padding: 10px; font-weight: bold; }
+        .btn-whatsapp:hover { background-color: #128C7E; }
+        
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>L'UNIVERS CONGO-WORK</h1>
+        <p>Votre partenaire multiservice de confiance à Pointe-Noire</p>
+    </header>
+
+    <nav>
+        <a href="#services">Nos Pôles</a>
+        <a href="#formations">Formations</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Des solutions adaptées à tous vos besoins</h2>
+        <p>Découvrez notre expertise à travers nos pôles d'activités dédiés au développement, à l'apprentissage et à l'excellence au Congo.</p>
+    </section>
+
+    <!-- Pôles de Services -->
+    <h2 class="section-title" id="services">Nos Domaines d'Activité</h2>
+    <div class="container">
+        <div class="card">
+            <h3>🎓 Centre de Formation</h3>
+            <p>Boostez votre carrière grâce à nos programmes d'apprentissage techniques, scientifiques et professionnels certifiants.</p>
+            <a href="#formations" class="btn">Voir les formations</a>
+        </div>
+        <div class="card">
+            <h3>🛒 Vente d'Articles</h3>
+            <p>Explorez notre boutique et notre large gamme de produits sélectionnés rigoureusement pour répondre à vos exigences.</p>
+            <a href="#boutique" class="btn">Visiter la boutique</a>
+        </div>
+        <div class="card">
+            <h3>💼 Prestation de Services</h3>
+            <p>Confiez vos projets à des experts. Nous offrons des services sur-mesure aux entreprises et aux particuliers.</p>
+            <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">Demander un devis</a>
+        </div>
+    </div>
+
+    <!-- Formations -->
+    <h2 class="section-title" id="formations">Nos Programmes de Formation</h2>
+    <div class="grid-container">
+        <div class="item-card">
+            <div class="item-img">💻</div>
+            <div class="item-info">
+                <h4>Informatique</h4>
+                <p>Maîtrise des outils bureautiques, initiation au développement et maintenance système.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">📈</div>
+            <div class="item-info">
+                <h4>Gestion</h4>
+                <p>Comptabilité, gestion de projet et entrepreneuriat pour piloter vos activités.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">🗣️</div>
+            <div class="item-info">
+                <h4>Langues</h4>
+                <p>Cours d'anglais professionnel et renforcement linguistique pour ouvrir vos horizons.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">🏫</div>
+            <div class="item-info">
+                <h4>Pédagogie</h4>
+                <p>Techniques d'enseignement modernes et formation pour les éducateurs et formateurs.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">🧼</div>
+            <div class="item-info">
+                <h4>Savonnerie</h4>
+                <p>Formation pratique à la fabrication artisanale de savons liquides et solides.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">📐</div>
+            <div class="item-info">
+                <h4>CAO / DAO</h4>
+                <p>Dessin et conception assistée par ordinateur pour l'architecture et l'ingénierie.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">⚡</div>
+            <div class="item-info">
+                <h4>Électricité Bâtiment</h4>
+                <p>Apprenez à concevoir, installer et dépanner les circuits électriques domestiques.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">☀️</div>
+            <div class="item-info">
+                <h4>Installation Panneaux Solaires</h4>
+                <p>Maîtrisez les énergies renouvelables : dimensionnement et pose de systèmes solaires.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boutique -->
+    <h2 class="section-title" id="boutique">Notre Boutique En Ligne</h2>
+    <div class="grid-container">
+        <div class="item-card">
+            <div class="item-img">📱</div>
+            <div class="item-info">
+                <h4>Électronique</h4>
+                <p>Téléphones, accessoires et matériel informatique de dernière génération.</p>
+                <a href="https://wa.me" class="btn btn-whatsapp" target="_blank">Commander sur WhatsApp</a>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item-img">👕</div>
+            <div class="item-info">
+                <h4>Vêtements & Mode</h4>
